@@ -57,6 +57,10 @@ if apiVersion >= 1.41 then
 end
 
 if apiVersion >= 1.41 then
+    PageFiles[#PageFiles + 1] = { title = "Altitude", script = "alti.lua" }
+end
+
+if apiVersion >= 1.41 then
     PageFiles[#PageFiles + 1] = { title = "GPS PIDs", script = "gpspids.lua" }
 end
 

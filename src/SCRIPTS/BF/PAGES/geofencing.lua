@@ -11,7 +11,7 @@ local inc = { x = function(val) x = x + val return x end, y = function(val) y = 
 local labels = {}
 local fields = {}
 
-if apiVersion >= 1.041 then
+if apiVersion >= 1.41 then
     fields[#fields + 1] = { t = "Altitude",  x = x,         y = inc.y(lineSpacing), sp = x + sp, min = 0, max = 1, vals = { 1 }, table = { [0]="OFF","ON"} }
     fields[#fields + 1] = { t = "Distance",  x = x,         y = inc.y(lineSpacing), sp = x + sp, min = 0, max = 1, vals = { 2 }, table = { [0]="OFF","ON"} }
     fields[#fields + 1] = { t = "Altitude max",             x = x,          y = inc.y(lineSpacing), sp = x + sp, min = 5, max = 500, vals = { 4, 5 } }
