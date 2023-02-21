@@ -12,9 +12,10 @@ local labels = {}
 local fields = {}
 
 if apiVersion >= 1.41 then
-    fields[#fields + 1] = { t = "Altitude",  x = x,         y = inc.y(lineSpacing), sp = x + sp, min = 0, max = 1, vals = { 1 }, table = { [0]="OFF","ON"} }
+    fields[#fields + 1] = { t = "Altitude",           x = x,          y = inc.y(lineSpacing), sp = x + sp, min = 0, max = 1, vals = { 1 }, table = { [0]="OFF","ON"} }
     fields[#fields + 1] = { t = "Limite",             x = x,          y = inc.y(lineSpacing), sp = x + sp, min = 5, max = 500, vals = { 1, 2 } }
-    fields[#fields + 1] = { t = "Lim bef max",        x = x,          y = inc.y(lineSpacing), sp = x + sp, min = 0, max = 50, vals = { 3, 4 } }
+    fields[#fields + 1] = { t = "Lim bef max",        x = x,          y = inc.y(lineSpacing), sp = x + sp, min = 5, max = 500, vals = { 3, 4 } }
+    
 end
 
 return {
